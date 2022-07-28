@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping(value = "/user")
 public class UserController {
 
-
 	/*处理全查请求的方法  返回值类型为String的普通方法*/
 	@RequestMapping(value = "/selAll")
 	public   String    selAll(){

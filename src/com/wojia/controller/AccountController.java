@@ -20,6 +20,7 @@ public class AccountController {
 	/*定义处理  查询所有账户信息的方法*/
 	@RequestMapping("/sel")
 	public String selAccounts(Model  model) {
+		System.out.println("wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww");
 		//处理请求  调用的是业务层方法
 		List<Account> list = service.findAll();
 		//存值
