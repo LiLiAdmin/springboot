@@ -19,11 +19,12 @@ public class AccountController {
 
 	/*定义处理  查询所有账户信息的方法*/
 	@RequestMapping("/sel")
-	public String selAccounts(HttpServletRequest request) {
+	public String selAccounts(Model  model) {
 		//处理请求  调用的是业务层方法
 		List<Account> list = service.findAll();
 		//存值
-		request.setAttribute("list", list);
+		model.addAttribute("list",list);
+		//指向视图页面
 		return "account";
 	}
 
