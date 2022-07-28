@@ -16,6 +16,7 @@ public class UserController {
 	@RequestMapping(value = "/selAll")
 	public   String    selAll(){
 		System.out.println("查询所有的用户信息");
+
 		return   "user";//user是视图名称 前缀+user+后缀
 	}
 
